@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="module1" DataObject.Pasting="TextBoxPasting" PreviewTextInput="module1_PreviewTextInput"  HorizontalAlignment="Left" Height="23" Margin="529,44,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="module2" DataObject.Pasting="TextBoxPasting" PreviewTextInput="module1_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="529,99,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="module3" DataObject.Pasting="TextBoxPasting" PreviewTextInput="module1_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="529,160,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Кол-во баллов по модулю: Разработка, администрирование &#10;и защита баз данных" HorizontalAlignment="Left" Margin="44,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="Кол-во баллов по модулю:Разработка модулей программного&#10;обеспечения для компьютерных систем" HorizontalAlignment="Left" Margin="44,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="Кол-во баллов по модулю:Сопровождение и обслуживание&#10; программного обеспечения компьютерных систем" HorizontalAlignment="Left" Margin="44,148,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="ammount" HorizontalAlignment="Left" Margin="217,227,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" RenderTransformOrigin="2.16,0.422"/>
+        <TextBlock x:Name="garde" HorizontalAlignment="Left" Margin="217,259,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Label Content="Кол-во баллов" HorizontalAlignment="Left" Margin="44,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="Оценка" HorizontalAlignment="Left" Margin="44,248,0,0" VerticalAlignment="Top" Height="24" Width="51"/>
+        <Button Content="Рассчитать" Click="ButtonClickCount" HorizontalAlignment="Left" Margin="126,348,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Очистить все" Click="ButtonClear" HorizontalAlignment="Left" Margin="547,353,0,0" VerticalAlignment="Top" Width="102"/>
+
+    </Grid>
+</Window>
